@@ -1,6 +1,17 @@
 
 # Optimizer with Oracle Database 12c
 
+## Table of Contents
+
+- [What is it?] (#what-is-it)
+- [Test Environment] (#test-environment)
+- Test Cases :
+      - [Case1] (#case1)
+      - [Case2] (#case2)
+      - [Stress Test] (#stress-test)
+      - [Case3] (#case3)
+- [About Video Resources] (#about-video-resources)
+
 ## What is it?
 
 >**Oracle 12c Parameter.**
@@ -21,24 +32,6 @@
 >
 > *_OPTIMIZER_UNNEST_SCALAR_SQ enables unnesting of scalar subquery.*
 
-
-## Table of Contents
-
-- [What is it?] (#what-is-it)
-- [Test Environment] (#test-environment)
-- Test Cases :
-      - [Case1] (#case1)
-      - [Case2] (#case2)
-      - [Stress Test] (#stress-test)
-      - [Case3] (#case3)
-- [About Video Resources] (#about-video-resources)
-
-## Test Cases
-
-- optimizer_adaptive_features = TRUE ,    optimizer_adaptive_reporting_only = FALSE
-- optimizer_adaptive_features = FALSE ,   optimizer_adaptive_reporting_only = TRUE
-- _optimizer_unnest_scalar_sq
-
 ## Test Environment
 ```sql
 SQL> SELECT * FROM V$VERSION;
@@ -51,6 +44,12 @@ CORE    12.1.0.2.0      Production                                              
 TNS for 64-bit Windows: Version 12.1.0.2.0 - Production                                   0
 NLSRTL Version 12.1.0.2.0 - Production                                                    0
 ```
+
+## Test Cases
+
+- optimizer_adaptive_features = TRUE ,    optimizer_adaptive_reporting_only = FALSE
+- optimizer_adaptive_features = FALSE ,   optimizer_adaptive_reporting_only = TRUE
+- _optimizer_unnest_scalar_sq
 
 ## Case1
 [1.Create Table](sql/CREATE_ADAPTIVE.sql)
