@@ -188,7 +188,8 @@ Predicate Information (identified by operation id):
 ```
 
 ## About Video Resources
-
+[Oracle Database 12c: Adaptive Execution Plans with Tom Kyte] (https://www.youtube.com/watch?v=9o9iuxNBciQ)
+[Oracle Database 12c: Enhanced Optimizer Statistics with Tom Kyte] (https://www.youtube.com/watch?v=AW6pT_RwGdc&list=PL6sqylOirwxvnObQuV2_rK8puh31i-2sx)
 
 ## Links
 - [_optimizer_unnest_scalar_sq](http://blog.tanelpoder.com/2013/08/13/oracle-12c-scalar-subquery-unnesting-transformation/)
