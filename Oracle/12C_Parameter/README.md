@@ -56,10 +56,10 @@ NLSRTL Version 12.1.0.2.0 - Production                                          
 [1.Create Table](sql/CREATE_ADAPTIVE.sql)
 
 2.Parameter
-
-      ALTER SESSION SET optimizer_adaptive_features = TRUE;
-      ALTER SESSION SET optimizer_adaptive_reporting_only = FALSE;
-
+```sql
+ALTER SESSION SET optimizer_adaptive_features = TRUE;
+ALTER SESSION SET optimizer_adaptive_reporting_only = FALSE;
+```
 [3.Test](sql/test.sql)
 
 [4.SQL Plan] (sql/SQL_TRUE.sql)
@@ -68,10 +68,10 @@ NLSRTL Version 12.1.0.2.0 - Production                                          
 [1.Create Table](sql/CREATE_ADAPTIVE.sql)
 
 2.Parameter
-
-      ALTER SESSION SET optimizer_adaptive_features = FALSE;
-      ALTER SESSION SET optimizer_adaptive_reporting_only = TRUE;
-
+```sql
+ALTER SESSION SET optimizer_adaptive_features = FALSE;
+ALTER SESSION SET optimizer_adaptive_reporting_only = TRUE;
+```
 [3.Test](sql/test.sql)
 
 [4.SQL Plan] (sql/SQL_FALSE.sql)
