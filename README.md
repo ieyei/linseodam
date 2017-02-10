@@ -6,9 +6,12 @@
 - [AWS] (#aws)
 - [Tensorflow] (#tensorflow)
 - [Data Science] (#data-science)
+- [Machine Learning] (#machine-learning)
 
 ## Interesting
 [Google Interview University] (https://github.com/jwasham/google-interview-university)
+
+[Try Git] (https://try.github.io/levels/1/challenges/1)
 
 ## Tech Blog
 [Kakao Tech](http://tech.kakao.com/)
@@ -61,3 +64,9 @@
 [(통계프로그래밍과 분석을 위한) R 입문] (http://www.kocw.net/home/search/kemView.do?kemId=865312#areavod)
 
 [데이터마이닝] (http://www.kocw.net/home/search/kemView.do?kemId=1046969)
+
+
+## Machine Learning
+[A Visual Introduction to Machine Learning] (http://www.r2d3.us/visual-intro-to-machine-learning-part-1/)
+
+[모두를 위한 머신러닝/딥러닝 강의] (http://hunkim.github.io/ml/)
