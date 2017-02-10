@@ -5,6 +5,7 @@
 - [Tech Blog] (#tech-blog)
 - [AWS] (#aws)
 - [Tensorflow] (#tensorflow)
+- [Data Science] (#data-science)
 
 ## Interesting
 [Google Interview University] (https://github.com/jwasham/google-interview-university)
@@ -54,3 +55,9 @@
 
 [TensorFlow Serving](https://tensorflow.github.io/serving/)
 
+## Data Science
+[통계의 기초] (http://www.kocw.net/home/search/kemView.do?kemId=694004&ar=relateCourse)
+
+[(통계프로그래밍과 분석을 위한) R 입문] (http://www.kocw.net/home/search/kemView.do?kemId=865312#areavod)
+
+[데이터마이닝] (http://www.kocw.net/home/search/kemView.do?kemId=1046969)
