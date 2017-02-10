@@ -1,4 +1,4 @@
-# linseodam
+# LINSEODAM
 
 ## Table of Contents
 - [Interesting] (#interesting)
@@ -10,7 +10,6 @@
 [Google Interview University] (https://github.com/jwasham/google-interview-university)
 
 ## Tech Blog
----
 [Kakao Tech](http://tech.kakao.com/)
 
 [WOOWA BROTHERS & SISTERS](http://woowabros.github.io/)
@@ -28,7 +27,6 @@
 [AWS Blog](https://aws.amazon.com/ko/blogs/aws/)
 
 ## AWS
----
 [비공식 AWS 공인 솔루션스 아키텍트] (https://github.com/ieyei/AWSCertifiedSolutionsArchitectUnofficialStudyGuide)
 
 [AWS Korea Blog](https://aws.amazon.com/ko/blogs/korea/)
@@ -43,7 +41,6 @@
 
 
 ## Tensorflow
----
 [Jordi Torres Github](https://github.com/jorditorresBCN)
 
 [TensorFlow](https://www.tensorflow.org)
