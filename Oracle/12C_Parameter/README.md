@@ -14,6 +14,15 @@
 - [Links] (#links)
 
 ## What is it?
+* Optimizer New Features
+ - Adaptive Plan
+      + optimizer_features_enable
+      + optimizer_adaptive_reporting_only
+ - Adaptive Statistic
+      + Automatic Reoptimization
+      + SQL Plan Directive
+      + Dynamic Statistics
+
 
 >**Oracle 12c Parameter.**
 >
