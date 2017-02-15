@@ -24,8 +24,6 @@
       + Dynamic Statistics
 
 
->**Oracle 12c Parameter.**
->
 >- **OPTIMIZER_ADAPTIVE_FEATURES (Default:TRUE)**
 >
 >*OPTIMIZER_ADAPTIVE_FEATURES enables or disables all of the adaptive optimizer features, including adaptive plan (adaptive join methods and bitmap pruning), automatic re-optimization, SQL plan directives, and adaptive distribution methods.*
@@ -84,6 +82,17 @@ ALTER SESSION SET optimizer_adaptive_reporting_only = TRUE;
 [3.Test](sql/test.sql)
 
 [4.SQL Plan] (sql/SQL_FALSE.sql)
+
+**Plan Hint**
+``` sql
+OPT_PARAM('_optimizer_nlj_hj_adaptive_join' 'false')  
+OPT_PARAM('_optimizer_gather_feedback' 'false')  
+OPT_PARAM('_optimizer_strans_adaptive_pruning' 'false') 
+OPT_PARAM('_optimizer_adaptive_plans' 'false')  
+OPT_PARAM('_optimizer_dsdir_usage_control' 0) 
+OPT_PARAM('_px_adaptive_dist_method' 'off')  
+OPT_PARAM('_optimizer_use_feedback' 'false')
+```
 
 ## Stress Test
 
@@ -194,6 +203,12 @@ Predicate Information (identified by operation id):
    2 - filter("O"."OWNER"=:B1)
    3 - filter("USERNAME" LIKE 'S%')
  
+```
+
+#### Hint
+``` sql
+/*+ OPT_PARAM('_optimizer_unnest_scalar_sq', 'TRUE') */
+/*+ OPT_PARAM('_optimizer_unnest_scalar_sq', 'FALSE') */
 ```
 
 ## About Video Resources
