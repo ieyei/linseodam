@@ -204,6 +204,35 @@ Predicate Information (identified by operation id):
    3 - filter("USERNAME" LIKE 'S%')
  
 ```
+#### Tuning Point
+```sql
+CREATE INDEX IDX1_TEST_OBJECTS ON TEST_OBJECTS(OWNER, CREATED);
+
+
+SQL_ID  f35v5nkzqkdpm, child number 0
+-------------------------------------
+SELECT /*+ GATHER_PLAN_STATISTICS NO_UNNEST(@ssq) */     u.username   , 
+(SELECT /*+ QB_NAME(ssq) */ MAX(created) FROM test_objects o WHERE 
+o.owner = u.username) FROM test_users u WHERE username LIKE 'S%'
+ 
+Plan hash value: 3504604252
+ 
+------------------------------------------------------------------------------------------------------------
+| Id  | Operation                    | Name              | Starts | E-Rows | A-Rows |   A-Time   | Buffers |
+------------------------------------------------------------------------------------------------------------
+|   0 | SELECT STATEMENT             |                   |      1 |        |     10 |00:00:00.01 |       3 |
+|   1 |  SORT AGGREGATE              |                   |     10 |      1 |     10 |00:00:00.01 |      22 |
+|   2 |   FIRST ROW                  |                   |     10 |      1 |      5 |00:00:00.01 |      22 |
+|*  3 |    INDEX RANGE SCAN (MIN/MAX)| IDX1_TEST_OBJECTS |     10 |      1 |      5 |00:00:00.01 |      22 |
+|*  4 |  TABLE ACCESS FULL           | TEST_USERS        |      1 |      3 |     10 |00:00:00.01 |       3 |
+------------------------------------------------------------------------------------------------------------
+ 
+Predicate Information (identified by operation id):
+---------------------------------------------------
+ 
+   3 - access("O"."OWNER"=:B1)
+   4 - filter("USERNAME" LIKE 'S%')
+```
 
 #### Hint
 ``` sql
