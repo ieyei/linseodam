@@ -216,8 +216,13 @@ Predicate Information (identified by operation id):
 
 [Oracle Database 12c: Enhanced Optimizer Statistics with Tom Kyte] (https://www.youtube.com/watch?v=AW6pT_RwGdc&list=PL6sqylOirwxvnObQuV2_rK8puh31i-2sx)
 
+[Oracle Database 12c Release 2 Videos] (https://docs.oracle.com/database/122/nav/videos.htm)
+
+[Real-World Performance Videos] (https://docs.oracle.com/database/122/nav/real-world-performance-videos.htm)
+
 ## Links
 - [_optimizer_unnest_scalar_sq](http://blog.tanelpoder.com/2013/08/13/oracle-12c-scalar-subquery-unnesting-transformation/)
 - [OPTIMIZER_ADAPTIVE_FEATURES](https://docs.oracle.com/database/121/REFRN/GUID-F5E53EFA-B395-4336-B046-1EE7AF12353B.htm#REFRN10344)
 - [OPTIMIZER_ADAPTIVE_REPORTING_ONLY](http://docs.oracle.com/database/121/REFRN/GUID-8DD128F9-4891-4061-9B2D-9D45315D44FB.htm#REFRN10327)
 - [Oracle 12c: Scalar Subquery Unnesting transformation] (http://blog.tanelpoder.com/2013/08/13/oracle-12c-scalar-subquery-unnesting-transformation/)
+- [ORACLE Live SQL] (https://livesql.oracle.com/apex/livesql/file/index.html)
