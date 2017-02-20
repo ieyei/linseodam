@@ -16,7 +16,7 @@
 ## What is it?
 * Optimizer New Features
  - Adaptive Plan
-      + optimizer_features_enable
+      + optimizer_adaptive_features
       + optimizer_adaptive_reporting_only
  - Adaptive Statistic
       + Automatic Reoptimization
